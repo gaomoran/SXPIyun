@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/activity_top"/>
+<TextView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/sxpi_ico_bd"
+    android:layout_gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/dt_jaowulogin_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yuanjiao_edittext"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="学号" />
+
+
+    <EditText
+        android:id="@+id/dt_jaowulogin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/yuanjiao_edittext"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_jaowulogin_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yuanjiao_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="Login_OnClick"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:text="登陆" />
+</LinearLayout>

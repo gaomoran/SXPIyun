@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrg.sxpiyun.ui.MyFragment"
+    android:clickable="true"
+    android:background="@color/bg_hui"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:id="@+id/rl_My_touxiangbg"
+
+        >
+
+        <com.mrg.sxpiyun.widget.YuanBitmap
+            android:layout_marginTop="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/faceback_head"
+            android:id="@+id/img_My_touxiang"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的昵称"
+            android:textColor="#ffffff"
+            android:background="@drawable/yuanjiao_text_nicheng"
+            android:textSize="15dp"
+            android:id="@+id/tv_My_nichen"
+            android:layout_below="@+id/img_My_touxiang"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fenggexian"
+        android:layout_marginTop="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.01dp"
+        android:background="#ffffff"
+        >
+
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_margin="0.005dp"
+            android:background="#ffffff"
+            >
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/info"
+            android:id="@+id/textView5" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_margin="0.005dp"
+            android:background="#ffffff"
+            android:onClick="Myclose"
+            >
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/close"
+            android:id="@+id/textView2" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="退出登陆"
+                android:textSize="15dp"
+                android:textColor="#fa4242"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

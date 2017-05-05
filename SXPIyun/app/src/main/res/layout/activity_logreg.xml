@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/activity_top" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rd_xueshen"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_radiobutton_xuanze"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="学生" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rd_laoshi"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_radiobutton_xuanze"
+
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="老师" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/sxpi_ico_bd"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/et_xuehao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/yuanjiao_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="用户名/由字母和数字、下划线组成的"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+            android:maxLength="20"
+            />
+
+        <TextView
+            android:id="@+id/tv_xuehao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_nicheng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLength="30"
+            android:background="@drawable/yuanjiao_edittext"
+            android:hint="昵称/随便取一个" />
+
+        <TextView
+            android:id="@+id/tv_nichen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/yuanjiao_edittext"
+            android:hint="密码"
+            android:maxLength="15"
+            android:inputType="textPassword"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_qrpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/yuanjiao_edittext"
+            android:hint="再次输入密码"
+            android:maxLength="15"
+            android:digits="0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:id="@+id/tv_qrpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/yuanjiao_edittext"
+            android:ems="10"
+            android:hint="邮箱/用来找回密码"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/tv_maile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yuanjiao_button"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

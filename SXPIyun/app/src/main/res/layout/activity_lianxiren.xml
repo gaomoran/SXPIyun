@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f7"
+    android:orientation="vertical" >
+<include layout="@layout/activity_top"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:id="@+id/rl_lianxiren_adduser"
+        android:layout_row="0"
+        android:layout_column="1">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tv_lxr_adduserico"
+            android:background="@drawable/adduser"
+            android:layout_gravity="center"
+            android:layout_above="@+id/tv_lxr_adduser"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友"
+            android:id="@+id/tv_lxr_adduser"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_column="0">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="2">
+
+
+        </RelativeLayout>
+
+    </GridLayout>
+
+    <ExpandableListView
+        android:id="@+id/elv_lianxiren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:scrollbars="none"
+
+        />
+
+</LinearLayout>

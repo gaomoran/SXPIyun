@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <include layout="@layout/activity_top" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/sxpi_ico_bd"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/dt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yuanjiao_edittext"
+        android:layout_margin="5dp"
+        android:hint="用户名" />
+
+
+    <EditText
+        android:id="@+id/dt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/yuanjiao_edittext"
+        android:ems="10"
+        android:hint="密码"
+        android:textColorHint="#d1d1ce"
+        android:inputType="textPassword" />
+
+
+    <ProgressBar
+        android:id="@+id/testlogin_loading"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false"
+        android:progress="50"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/yuanjiao_button"
+            android:layout_marginLeft="5dp"
+            android:onClick="Login_OnClick"
+            android:text="登陆"
+            android:textColor="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/btn_login_logreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="login_logreg"
+            android:background="@drawable/yuanjiao_button_hui"
+            android:text="注册"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

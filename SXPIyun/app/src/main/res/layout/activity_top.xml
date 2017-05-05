@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/topbgcolor">
+
+    <Button
+        android:id="@+id/btn_top_forward"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:background="@drawable/top_list"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|center"
+        android:maxEms="9"
+        android:singleLine="true"
+        android:text="标题栏"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_top_backward"
+
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_1"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:onClick="top_backward"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="18dp"
+        android:visibility="visible" />
+
+</RelativeLayout>
+
+

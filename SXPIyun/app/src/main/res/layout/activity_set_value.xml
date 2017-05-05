@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrg.sxpiyun.ui.SetValueActivity">
+<include layout="@layout/activity_top"
+    android:id="@+id/include3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_setvalue_set"
+        android:hint="11"
+        android:layout_margin="10dp"
+        android:background="@drawable/yuanjiao_edittext"
+        android:layout_below="@+id/include3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:onClick="setvalue_post"
+        android:id="@+id/btn_setvaule_post"
+        android:background="@drawable/yuanjiao_button"
+        android:layout_below="@+id/et_setvalue_set"
+        android:layout_alignRight="@+id/et_setvalue_set"
+        android:layout_alignEnd="@+id/et_setvalue_set" />
+
+
+</RelativeLayout>

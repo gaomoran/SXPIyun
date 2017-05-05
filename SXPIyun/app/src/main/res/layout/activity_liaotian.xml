@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <include layout="@layout/activity_top"/>
+
+    <ListView
+        android:id="@+id/Liaotian_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:divider="@null"
+        android:dividerHeight="20dp"
+        android:listSelector="@android:color/transparent"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+         >
+
+        <EditText
+            android:id="@+id/et_liaotian_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.74"
+            android:hint="请输入内容"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:background="@drawable/yuanjiao_edittext"
+            android:text=""
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/btn_liaotian_fasun"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/yuanjiao_button_send"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

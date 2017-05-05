@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxg.sxpi.ui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sxpi_ico"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.mrg.sxpiyun.ui.LiaotianActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.TestLoginActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.MainActivity"></activity>
+        <activity android:name="com.mrg.sxpiyun.ui.HaoYouSouSuoActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.AdPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mrg.sxpiyun.ui.LogregActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.SelectContactActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.LeaveActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.JiaoWuLoginActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.SetValueActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.UtilActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.WebActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.MapActivity" />
+        <activity android:name="com.mrg.sxpiyun.ui.SelectResultsActivity"></activity>
+    </application>
+
+</manifest>

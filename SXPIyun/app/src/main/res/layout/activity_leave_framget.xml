@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_hui"
+
+    >
+<include layout="@layout/activity_top"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/et_leave_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiao_edittext"
+                android:enabled="false"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="班级"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/et_leave_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiao_edittext"
+                android:enabled="false"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="假因"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/et_leave_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiao_edittext"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <DatePicker
+                android:id="@+id/dp_leave_startdata"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3.33"
+                android:calendarViewShown="false"
+                android:theme="@android:style/Theme.Holo.Light" />
+
+            <TextView
+                android:id="@+id/tv_leave_startdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <DatePicker
+                android:id="@+id/dp_leave_stopdata"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false"
+                android:theme="@android:style/Theme.Holo.Light" />
+
+            <TextView
+                android:id="@+id/tv_leave_stopdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_leave_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="班主任签名"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_leave_teacheryn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_leave_teacheryn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_leave_teacher_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/yuanjiao_button"
+                        android:onClick="teacherYN"
+                        android:text="同意" />
+
+                    <Button
+                        android:id="@+id/btn_leave_teacher_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yuanjiao_button_hui"
+                        android:onClick="teacherYN"
+                        android:text="不同意" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_leave_director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学工办签名"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_leave_directoryn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45dp"
+
+                    android:visibility="gone"
+
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_leave_directoryn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btn_leave_director_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/yuanjiao_button"
+                        android:onClick="directorYN"
+                        android:text="同意" />
+
+                    <Button
+                        android:id="@+id/btn_leave_director_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yuanjiao_button_hui"
+                        android:onClick="directorYN"
+                        android:text="不同意" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_leave_updata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/yuanjiao_button"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

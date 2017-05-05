@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_hui"
+    android:clickable="true"
+    >
+    <include layout="@layout/activity_top"/>
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/title_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/textview_biankuang_hui"
+            android:text="第1周"/>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="30dp"
+            android:background="@drawable/textview_biankuang_hui"
+             />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="周一"
+            android:textColor="#ffffff"
+            android:background="@drawable/textview_biankuang_hui"
+            android:gravity="center"
+            android:id="@+id/textView_Monday" />
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="周二"
+            android:textColor="#ffffff"
+            android:background="@drawable/textview_biankuang_hui"
+            android:gravity="center"
+            android:id="@+id/textView_Tuesday" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="周三"
+            android:textColor="#ffffff"
+            android:background="@drawable/textview_biankuang_hui"
+            android:gravity="center"
+            android:id="@+id/textView_Wednesday" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="周四"
+            android:textColor="#ffffff"
+            android:background="@drawable/textview_biankuang_hui"
+            android:gravity="center"
+            android:id="@+id/textView_Thursday" />
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="周五"
+            android:textColor="#ffffff"
+            android:background="@drawable/textview_biankuang_hui"
+            android:gravity="center"
+            android:id="@+id/textView_Friday" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center"
+                    android:id="@+id/textView_getWidth" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="3"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="4"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="5"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="6"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="7"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="8"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="9"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="10"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="11"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="12"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="13"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="14"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/textview_biankuang_hui"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_Monday"
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_Tuesday"
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_Wednesday"
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_Thursday"
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_schedule_Friday"
+                android:orientation="vertical"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

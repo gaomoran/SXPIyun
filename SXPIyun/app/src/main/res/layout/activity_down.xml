@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/di1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="dianji"
+                android:src="@android:drawable/ic_dialog_dialer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/di2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:onClick="dianji"
+                android:src="@android:drawable/ic_dialog_email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/di3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:onClick="dianji"
+                android:src="@android:drawable/ic_dialog_map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/di4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:onClick="dianji"
+                android:src="@android:drawable/ic_dialog_info" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

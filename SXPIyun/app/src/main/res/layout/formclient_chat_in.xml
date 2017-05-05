@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="3.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="3.0dip">
+
+        <com.mrg.sxpiyun.widget.YuanBitmap
+            android:id="@+id/from_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/faceback_head" />
+
+        <TextView
+            android:id="@+id/liaotian_in_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuanjiao_chat_in"
+            android:text="消息sss\nsss"
+            android:textColor="#FF000000"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/from_head"
+            android:layout_toEndOf="@+id/from_head"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
