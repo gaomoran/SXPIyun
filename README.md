@@ -11,7 +11,7 @@
 ##### 5.校园地图
 
 ### 开发：
-##### 软件基于MVC+XMMP+okhttp+jsoup实现
+##### 软件基于MVC+XMPP+okhttp+jsoup实现
 ##### BottomNavigtionBar+Fragment实现基本动画
 ##### 后端靠自己的五毛服务器搭建即时通讯服务+校园网网页解析
 
